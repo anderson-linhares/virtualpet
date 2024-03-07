@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Pet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body class="bg-light">
+    <header class="bg-secondary pt-4 ps-4">
+        <nav class="navbar">
+            <figure class="navbar-brand">
+                <img src="imagens/pets.jpg" class="rounded-circle" alt="Caõ e gato trocando carinho" height="100"
+                    width="200">
+                <figcaption class="text-white">
+                    <h1> Virtual pet</h1>
+                </figcaption>
+            </figure>
+            <ul class="nav me-auto">
+                <li class="nav-item"><a class="nav-link text-light" href="Virtual-pet.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="tabela-de-pets.html">Conheça nossos pets</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-light" href="criar-pet.html">Criar pet</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#">Ver meus pets</a></li>
+            </ul>
+        </nav>
+
+
+
+    </header>
+
+    <main class="pt-4">
+        <div class="container">
+            <article>
+                <h1 class="text-secondary">Bem Vindo ao Virtual Pet</h1>
+                <p>Nosso objetivo é proporcionar um lugar maravilhoso para você relaxar e desfrutar
+                    de nossos incríveis animais de estimação virtuais. Aqui você pode brincar com nossos
+                    animais de estimação ou criar seus próprios animais de estimação para uma experiência
+                    personalizada.</p>
+                <p>Não há espaço para um cachorro grande? Não há problema. Seus animais de estimação
+                    virtuais cabem em qualquer lugar. Viajar demais? Nós temos tudo o que você precisa. Seus
+                    animais de estimação virtuais podem ir a qualquer lugar que você tenha uma conexão
+                    com a internet. Odeia aquela caixa de areia fedorenta? Uma das melhores coisas sobre
+                    um animal de estimação virtual é que eles não precisam de um!</p>
+
+                <p><a href="tabela-de-pets.html">Encontre seu melhor amigo hoje!</a></p>
+                <div class="row">
+                    <section class="">
+                        <div class="col-md-6 border border-2 border-secondary">
+                            <form>
+                                <h3 class="text-light bg-secondary">Conte-nos sobre você:</h3>
+                                <div class=" m-2">
+                                    <label class="form-label" for="nome-cliente">Seu Nome</label>
+                                    <input class="form-control" id="nome-cliente" required maxlength="12">
+                                </div>
+                                <div class="m-2">
+                                    <label class="form-label mt-3" for="tipo-de-pet-favorito">Qual seu tipo de pet
+                                        favorito?</label>
+                                    <input class="form-control" id="tipo-de-pet-favorito" required maxlength="20">
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center ">
+                                    <button class=" btn btn-secondary mt-3 mb-3">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+
+            </article>
+        </div>
+    </main>
+    <footer class="border-top border-light mt-4 fw-light">
+        <div>
+            &copy;Copyright - Virtual Pet, Inc.
+    </footer>
+    </div>
+</body>
+
+</html>

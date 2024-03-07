@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de pet:Virtual pet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body class="bg-light">
+    <header class="bg-secondary pt-4 ps-4">
+        <nav class="navbar">
+            <figure class="navbar-brand">
+                <img src="imagens/pets.jpg" class="rounded-circle" alt="Caõ e gato trocando carinho" height="100"
+                    width="200">
+                <figcaption class="text-white">
+                    <h1> Virtual pet</h1>
+                </figcaption>
+            </figure>
+            <ul class="nav me-auto">
+                <li class="nav-item"><a class="nav-link text-light" href="Virtual-pet.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="tabela-de-pets.html">Conheça nossos pets</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-light" href="criar-pet.html">Criar pet</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#">Ver meus pets</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="text-secondary">Crie seu pet</h1>
+            <form action="" method="get">
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <label class="form-label" for="nome-do-pet">Nome do pet:</label>
+                        <input class="form-control" id="nome-do-pet" name="Nome-pet" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="data">Data de adoção virtual:</label>
+                        <input class="form-control" type="date" name="data-adorcao" id="data" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mt-3">
+                        <fieldset>
+                            <legend class="col-form-label p-0">Qual tipo do pet?</legend>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="cachorro" name="tipo-pet"
+                                    value="cachorro">
+                                <label class="form-check-label" for="cachorro">Cachorro</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="gato" name="tipo-pet">
+                                <label class="form-check-label" for="gato">Gato</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="hamster" name="tipo-pet"
+                                    value="hamster">
+                                <label class="form-check-label" for="hamster">Hamster</label>
+                            </div>
+                        </fieldset>
+                        <label class="form-label mt-4" for="idade">Idade:</label>
+                        <input class="form-control" type="number" name="Idade" id="idade" min="0" required>
+                        <label class="form-label mt-4" for="Temperamento">Temperamento:</label>
+                        <select class="form-select" id="Temperamento" name="Temperamento">
+                            <option value="docil">Dócil</option>
+                            <option value="preguicoso">Preguiçoso</option>
+                            <option value="hiperativo">Hiperativo</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <label class="form-label" for="historia-pet">História do pet:</label>
+                        <textarea class="form-control" id="historia-pet" name="historia-pet" rows="8"></textarea>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <label class="form-label" for="email">E-mail do proprietário:</label>
+                        <input class="form-control" type="email" name="email" id="email" required>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" id="checkbox" name="adotado" value="sim"
+                                required>
+                            <label class="form-label" for="checkbox">Quero adotar esse pet</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <button class="btn btn-secondary">Salvar Pet</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="border-top border-light mt-4 fw-light">
+        <div>
+            &copy;Copyright - Virtual Pet, Inc.
+    </footer>
+</body>
+</html>
